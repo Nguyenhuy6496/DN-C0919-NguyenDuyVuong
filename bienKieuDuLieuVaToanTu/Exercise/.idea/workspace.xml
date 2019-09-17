@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c767fc1-893b-403c-8611-3836f4483c86" name="Default Changelist" comment="" />
+    <list default="true" id="9c767fc1-893b-403c-8611-3836f4483c86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh/diemTrungBinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh/diemTrungBinh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/enterStudentScores.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice/suDungToanTu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/suDungToanTu/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -10,6 +26,36 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <replaceStrings>
@@ -22,26 +68,94 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/enterStudentScores.html" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh.html" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo.html" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo.js" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh.js" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.html" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.html" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.html" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.js" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.js" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh/diemTrungBinh.js" />
+        <option value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.js" />
+        <option value="$PROJECT_DIR$/ungDungChuyenDoiTienTe/demo.html" />
+        <option value="$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.html" />
+        <option value="$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.js" />
+        <option value="$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js" />
+        <option value="$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/Exercise.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
     <option name="height" value="698" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="bienKieuDuLieuVaToanTu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="ungDungChuyenDoiTienTe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="ungDungMayTinh" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\Module1\bienKieuDuLieuVaToanTu\Exercise\bienKieuDuLieuVaToanTu\doiNhietDo" />
+      <recent name="E:\WorkSpace\Module1\bienKieuDuLieuVaToanTu\Exercise\bienKieuDuLieuVaToanTu\diemTrungBinh" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -66,22 +180,22 @@
       <option name="presentableId" value="Default" />
       <updated>1568190270066</updated>
       <workItem from="1568190271261" duration="248000" />
+      <workItem from="1568682894502" duration="35000" />
+      <workItem from="1568682930161" duration="9266000" />
+      <workItem from="1568693021211" duration="2674000" />
+      <workItem from="1568703387594" duration="3873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248000" />
+    <option name="totallyTimeSpent" value="16096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -89,12 +203,128 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh/diemTrungBinh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh/diemTrungBinh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ungDungChuyenDoiTienTe/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
