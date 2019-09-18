@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c767fc1-893b-403c-8611-3836f4483c86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh/diemTrungBinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/diemTrungBinh/diemTrungBinh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo/doiNhietDo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhChuViHinhTron/tinhChuViHinhTron.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/tinhDienTichHinhTron/tinhDienTichHinhTron.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/enterStudentScores.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice/suDungToanTu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice/suDungToanTu/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9c767fc1-893b-403c-8611-3836f4483c86" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -33,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -42,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -113,41 +97,14 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="bienKieuDuLieuVaToanTu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="ungDungChuyenDoiTienTe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="ungDungMayTinh" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bienKieuDuLieuVaToanTu/doiNhietDo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -184,11 +141,12 @@
       <workItem from="1568682930161" duration="9266000" />
       <workItem from="1568693021211" duration="2674000" />
       <workItem from="1568703387594" duration="3873000" />
+      <workItem from="1568770147415" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16096000" />
+    <option name="totallyTimeSpent" value="16111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -291,13 +249,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ungDungChuyenDoiTienTe/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ungDungChuyenDoiTienTe/demo.html" />
     <entry file="file://$PROJECT_DIR$/ungDungChuyenDoiTienTe/ungDungChuyenDoiTienTe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -312,17 +264,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ungDungMayTinh/ungDungMayTinh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
