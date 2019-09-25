@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tra từ điển</title>
+</head>
+<body>
+<form>
+    <h1>Dictionary English - Vietnamese</h1>
+
+    <label>
+        Type your word:
+        <input id="txtWord" type="text">
+    </label>
+    <input type="button" value="Search" onclick="searchWord()">
+    <p id="result"></p>
+</form>
+<script>
+    let english = ["Apple", "Orange", "Banana", "Lemon", "Watermelon", "Pineapple", "Peaches"];
+    let vietnamese = ["Táo", "Cam", "Chuối", "Chanh", "Dưa Hấu", "Dứa", "Đào"];
+    let result = [];
+
+    function searchWord() {
+        let word = document.getElementById("txtWord").value;
+        let x = 0;
+        while (x < english.length) {
+            if (word === english[x]) {
+                result.push(vietnamese[x]);
+                break;
+            } else if (x === english.length - 1) {
+                result.push("not found");
+                break;
+            } else {
+                x++;
+            }
+        }
+
+        document.getElementById("result").innerHTML = result;
+    }
+
+</script>
+</body>
+</html>

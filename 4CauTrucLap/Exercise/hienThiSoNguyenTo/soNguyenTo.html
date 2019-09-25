@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Nguyên Tó</title>
+</head>
+<body>
+<form>
+    <h1>Dãy số Nguyên tố</h1>
+    <p id="displayPrime"></p>
+</form>
+<script>
+    let numberOf = parseInt(prompt("Enter the prime number to display:", "How many do you want?"));
+    let count = 1;
+    let j = 3;
+    let i;
+    let prime = true;
+    let N = "";
+    while (count <= numberOf) {
+        for (i = 2; i <= Math.sqrt(j); i++) {
+            if (j % i === 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) {
+            N += j + "," + "<br>";
+            count++;
+        }
+        prime = true;
+        j += 2;
+    }
+    document.getElementById("displayPrime").innerHTML = N;
+
+</script>
+</body>
+</html>
