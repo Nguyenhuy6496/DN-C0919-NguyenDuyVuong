@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+<form>
+    <h1>Check if your number is prime</h1>
+    <label for="inputNum">Type your number</label><input id="inputNum" type="number">
+    <input id="btnCheck" type="button" value="Check" onclick="checkPrime()">
+    <p id="result">Result: </p>
+</form>
+<script>
+    let display = document.getElementById("result");
+    let arrPrime = [];
+    let prime = true;
+    for (let i = 2; i < 10000; i++) {
+        for (let j = 2; j <= Math.sqrt(i); j++) {
+            if (i % j === 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) {
+            arrPrime.push(i);
+        }
+        prime = true;
+    }
+    /*document.writeln(arrPrime.toString() + ",");*/
+    function checkPrime() {
+        let number = parseInt(document.getElementById("inputNum").value);
+        for (let x = 0; x < arrPrime.length; x++) {
+            if (number === arrPrime[x]) {
+                 display.innerHTML = number + " is prime.";
+                 break;
+            } else {
+                display.innerHTML = number + " is not prime.";
+
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

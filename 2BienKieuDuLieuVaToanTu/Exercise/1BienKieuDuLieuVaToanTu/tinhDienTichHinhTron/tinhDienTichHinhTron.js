@@ -1,5 +1,5 @@
 let radius = prompt("Nhập bán kính R:");
-let pi = Math.PI
+let pi = Math.PI;
 let area = radius * radius * pi;
 alert("diện tích hình tròn là: " + area);
 /*

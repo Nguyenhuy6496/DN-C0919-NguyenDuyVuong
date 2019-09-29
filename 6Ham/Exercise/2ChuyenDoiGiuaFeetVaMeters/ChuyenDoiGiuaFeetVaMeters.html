@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit converter</title>
+</head>
+<body>
+<form>
+    <h1>LENGTH CONVERTER</h1>
+    <label for="inputFoot">Feet:</label>
+    <input id="inputFoot" type="number" placeholder="Foot"
+           oninput="footToMeter(this.value)"
+           onchange="footToMeter(this.value)"/>
+
+    <label for="inputMeter"> ==> Meter:</label>
+    <input id="inputMeter" type="number" placeholder="Meter"
+           oninput="meterToFoot(this.value)"
+           onchange="meterToFoot(this.value)"/>
+</form>
+<script>
+    function footToMeter(val) {
+        val = parseFloat(val);
+        document.getElementById("inputMeter").value = val * 0.305;
+    }
+
+    function meterToFoot(val) {
+        val = parseFloat(val);
+        document.getElementById("inputFoot").value = val * 3.279;
+    }
+</script>
+</body>
+</html>
