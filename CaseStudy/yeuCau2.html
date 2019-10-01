@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Furama Resort</title>
+</head>
+<body>
+<script>
+    //task 1
+    let cusName = "Nguyen Duy Vuong";
+    let cusIdCard = 123456789;
+    let cusBirthday = "06/04/1996";
+    let cusEmail = "ndvuong@gmail.com";
+    let cusAddress = "Danang";
+    let cusPrivilege = "Diamond";
+    let cusDiscount = 20;
+    let cusAccompanying = "No";
+    let cusDaysToRent = 10;
+    let cusTypeOfService = "Villa";
+    let cusTypeOfRoom = "VIP";
+    alert("All your information:"
+        + "\n" + "Name: " + cusName
+        + "\n" + "ID Card: " + cusIdCard
+        + "\n" + "Birthday: " + cusBirthday
+        + "\n" + "Email: " + cusEmail
+        + "\n" + "Address: " + cusAddress
+        + "\n" + "Privilege: " + cusPrivilege
+        + "\n" + "Discount: " + cusDiscount
+        + "\n" + "Accompanying: " + cusAccompanying
+        + "\n" + "Number of days to rent: " + cusDaysToRent
+        + "\n" + "Type of service: " + cusTypeOfService
+        + "\n" + "Type of room: " + cusTypeOfRoom
+    );
+    //task 2
+    let optionOfMenu = parseFloat(prompt("Do you want to do something else?"
+        + "\n" + "Please select the number you want to do."
+        + "\n" + "1: Change information."
+        + "\n" + "2: Show the amount to be paid after discount."
+        + "\n" + "3: No."));
+
+    if (optionOfMenu === 1) {
+        let numOfInfo = parseFloat(prompt("What information would you like to edit?"
+            + "\n" + "Please select the number."
+            + "\n" + "1: Name: " + cusName
+            + "\n" + "2: ID Card: " + cusIdCard
+            + "\n" + "3: Birthday: " + cusBirthday
+            + "\n" + "4: Email: " + cusEmail
+            + "\n" + "5: Address: " + cusAddress
+            + "\n" + "6: Privilege: " + cusPrivilege
+            + "\n" + "7: Discount: " + cusDiscount
+            + "\n" + "8: Accompanying: " + cusAccompanying
+            + "\n" + "9: Number of days to rent: " + cusDaysToRent
+            + "\n" + "10: Type of service: " + cusTypeOfService
+            + "\n" + "11: Type of room: " + cusTypeOfRoom));
+        switch (numOfInfo) {
+            case 1:
+                cusName = prompt("Enter the name to edit:");
+                break;
+            case 2:
+                cusIdCard = prompt("Enter the ID card to edit:");
+                break;
+            case 3:
+                cusBirthday = prompt("Enter the birthday to edit:");
+                break;
+            case 4:
+                cusEmail = prompt("Enter the email to edit:");
+                break;
+            case 5:
+                cusAddress = prompt("Enter the address to edit:");
+                break;
+            case 6:
+                cusPrivilege = prompt("Enter the privilege to edit:");
+                break;
+            case 7:
+                cusDiscount = prompt("Enter the number of discount to edit:");
+                break;
+            case 8:
+                cusAccompanying = prompt("Enter the number of accompanying to edit:");
+                break;
+            case 9:
+                cusDaysToRent = prompt("Enter the number of days to rent to edit:");
+                break;
+            case 10:
+                cusTypeOfService = prompt("Enter the type of service to edit:"
+                    + "\n" + "Villa, House or Room");
+                break;
+            case 11:
+                cusTypeOfRoom = prompt("Enter the type of room to edit:");
+                break;
+        }
+        alert("All your information:"
+            + "\n" + "Name: " + cusName
+            + "\n" + "ID Card: " + cusIdCard
+            + "\n" + "Birthday: " + cusBirthday
+            + "\n" + "Email: " + cusEmail
+            + "\n" + "Address: " + cusAddress
+            + "\n" + "Privilege: " + cusPrivilege
+            + "\n" + "Discount: " + cusDiscount
+            + "\n" + "Accompanying: " + cusAccompanying
+            + "\n" + "Number of days to rent: " + cusDaysToRent
+            + "\n" + "Type of service: " + cusTypeOfService
+            + "\n" + "Type of room: " + cusTypeOfRoom
+        );
+        //task 3
+    } else if (optionOfMenu === 2) {
+        let price = 0;
+        if (cusTypeOfService === "Villa") {
+            price = 500;
+        } else if (cusTypeOfService === "House") {
+            price = 300;
+        } else if (cusTypeOfService === "Room") {
+            price = 100;
+        } else {
+            alert("Failed");
+        }
+        let result = price * cusDaysToRent * (1 - cusDiscount / 100);
+        switch (cusAddress) {
+            case "Danang":
+                result -= 20;
+                break;
+            case "Hue":
+                result -= 10;
+                break;
+            case "Quangnam":
+                result -= 5;
+                break;
+        }
+        switch (cusPrivilege) {
+            case "Diamond":
+                result -= 15;
+                break;
+            case "Platinum":
+                result -= 10;
+                break;
+            case "Gold":
+                result -= 5;
+                break;
+            case "Silver":
+                result -= 2;
+                break;
+
+        }
+        let currentYear = new Date().getFullYear();
+        let birthday = new Date(cusBirthday).getFullYear();
+        let ageCustomer = currentYear - birthday;
+        if ((ageCustomer > 30) && (cusAddress = "Danang")) {
+            result -= 2;
+        } else if ((20 < ageCustomer < 30) && (cusAddress = "Danang")) {
+            result -= 1;
+        }
+        alert(result);
+    } else if (optionOfMenu === 3) {
+        alert("Thank you for booking at the Furama Resort!")
+    } else {
+        if (optionOfMenu !== 1 || optionOfMenu !== 2 || optionOfMenu !== 3) {
+            alert("Failed")
+        }
+    }
+</script>
+
+</body>
+</html>

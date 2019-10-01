@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Furama Resort</title>
+</head>
+<body>
+<script>
+    let optionCus;
+    let arrCusName = [];
+    let cusName = "";
+    let loop = true;
+    let disCusName;
+   do {
+       optionCus = parseFloat(prompt("What would you like to do?" +
+           "\n" + "Select the corresponding number" +
+           "\n" + "1: Add new customer names." +
+           "\n" + "2: Delete customer."));
+       switch (optionCus) {
+           //task 1
+           case 1:
+               let numberOfCusName = prompt("Enter the number of customer names:");
+               for (let i = 1; i <= numberOfCusName; i++) {
+                   cusName = prompt("Type the customer name: " + i);
+                   arrCusName.push(cusName);
+               }
+               arrCusName.sort();
+               disCusName = arrCusName.join('\n');
+               alert(disCusName);
+               break;
+           //task 2
+           case 2:
+               let delCusName = prompt("Enter customer name you want to delete:");
+               let j = arrCusName.indexOf(delCusName);
+               if (j !== -1) {
+                   arrCusName.splice(j, 1);
+               }
+               disCusName = arrCusName.join('\n');
+               alert(disCusName);
+               break;
+       }
+   }
+   while (loop);
+</script>
+</body>
+</html>

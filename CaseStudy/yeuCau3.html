@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Furama Resort</title>
+</head>
+<body>
+<script>
+    let validationCheck = true;
+    let cusName = prompt("Enter your name:");
+    let nameStandard = "";
+    cusName = cusName.trim().toLocaleLowerCase();
+    for (let i = 0; i < cusName.length; i++) {
+        if (cusName.charAt(i) === " " && cusName.charAt(i + 1) === " ") {
+            continue;
+        }
+        if (i === 0 || cusName.charAt(i - 1) === " ") {
+            nameStandard += cusName.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        nameStandard += cusName.charAt(i);
+    }
+
+    let cusIdCard;
+    do {
+        cusIdCard = prompt("Enter your ID Card:");
+
+        if (isNaN(cusIdCard) || cusIdCard < 0) {
+            alert("ID card is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        if (cusIdCard.length !== 9) {
+            alert("ID card is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        let IdCard = parseFloat(cusIdCard);
+        if (!Number.isInteger(IdCard)) {
+            alert("ID card is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+
+        validationCheck = true;
+    }
+    while (!validationCheck);
+
+    let cusBirthday;
+    do {
+        cusBirthday = prompt("Enter your birthday (dd/MM/YYYY):");
+        if (cusBirthday.charAt(2) !== "/" && cusBirthday.charAt(5) !== "/") {
+            alert("Birthday is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        let day = cusBirthday.substring(0, 2);
+        let month = cusBirthday.substring(3, 5);
+        let year = cusBirthday.substring(6, 10);
+        if (isNaN(day) || isNaN(month) || isNaN(year)) {
+            alert("Birthday is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        day = Number.parseFloat(day);
+        month = Number.parseFloat(month);
+        year = Number.parseFloat(year);
+        if (Number.isInteger(day) || Number.isInteger(month) || Number.isInteger(year)) {
+            if (day < 0 || day > 32 || month < 0 || month > 13 || year < 1900 || year > 2010) {
+                alert("Birthday is Invalid! Please try again!");
+                validationCheck = false;
+                continue;
+            }
+        }
+        validationCheck = true;
+    }
+    while (!validationCheck);
+
+    let cusEmail;
+    do {
+        let countAt = 0;
+        let countDot = 0;
+        cusEmail = prompt("Enter your email:");
+        for (let i = 0; i < cusEmail.length; i++) {
+            if (cusEmail.charAt(i) === "@") {
+                countAt++;
+            }
+            if (cusEmail.charAt(i) === ".") {
+                countDot++;
+            }
+        }
+        if (countAt !== 1 && countDot < 1) {
+            alert("Email is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        validationCheck = true;
+    }
+    while (!validationCheck);
+
+    let cusAddress = prompt("Enter your address: Danang, Hue, Quangnam");
+
+    let cusPrivilege = prompt("Enter your privilege: Diamond, Platinum, Gold, Silver.");
+
+    let cusDiscount;
+    do {
+        cusDiscount = prompt("Enter your discount:");
+        if (isNaN(cusDiscount) || cusDiscount < 0) {
+            alert("Discount is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        cusDiscount = Number.parseFloat(cusDiscount);
+        if (!Number.isInteger(cusDiscount)) {
+            alert("Discount is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        validationCheck = true;
+    }
+    while (!validationCheck);
+
+    let cusAccompanying;
+    do {
+        cusAccompanying = prompt("Enter your Accompanying:");
+        if (isNaN(cusAccompanying) || cusAccompanying < 0) {
+            alert("Accompanying is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        cusAccompanying = Number.parseFloat(cusAccompanying);
+        if (!Number.isInteger(cusAccompanying)) {
+            alert("Accompanying is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        validationCheck = true;
+    }
+    while (!validationCheck);
+
+    let cusDaysToRent;
+    do {
+        cusDaysToRent = prompt("Enter the number of days to rent:");
+        if (isNaN(cusDaysToRent) || cusDaysToRent < 0) {
+            alert("The number of days to rent is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        cusDaysToRent = Number.parseFloat(cusDaysToRent);
+        if (!Number.isInteger(cusDaysToRent)) {
+            alert("The number of days to rent is Invalid! Please try again!");
+            validationCheck = false;
+            continue;
+        }
+        validationCheck = true;
+    }
+    while (!validationCheck);
+
+    let cusTypeOfService = prompt("Enter type of service you want: (Villa, House, Room");
+
+    let cusTypeOfRoom = prompt("Enter type of room you want: (VIP, Business, Normal");
+
+    let price = 0;
+    if (cusTypeOfService === "Villa") {
+        price = 500;
+    } else if (cusTypeOfService === "House") {
+        price = 300;
+    } else if (cusTypeOfService === "Room") {
+        price = 100;
+    } else {
+        alert("Failed");
+    }
+    let result = price * cusDaysToRent * (1 - cusDiscount / 100);
+    switch (cusAddress) {
+        case "Danang":
+            result -= 20;
+            break;
+        case "Hue":
+            result -= 10;
+            break;
+        case "Quangnam":
+            result -= 5;
+            break;
+    }
+    switch (cusPrivilege) {
+        case "Diamond":
+            result -= 15;
+            break;
+        case "Platinum":
+            result -= 10;
+            break;
+        case "Gold":
+            result -= 5;
+            break;
+        case "Silver":
+            result -= 2;
+            break;
+
+    }
+    let currentYear = new Date().getFullYear();
+    let birthday = new Date(cusBirthday).getFullYear();
+    let ageCustomer = currentYear - birthday;
+    if ((ageCustomer > 30) && (cusAddress = "Danang")) {
+        result -= 2;
+    } else if ((20 < ageCustomer < 30) && (cusAddress = "Danang")) {
+        result -= 1;
+    }
+    alert("All your information:"
+
+        + "\n" + "Name: " + nameStandard
+        + "\n" + "ID Card: " + cusIdCard
+        + "\n" + "Birthday: " + cusBirthday
+        + "\n" + "Email: " + cusEmail
+        + "\n" + "Address: " + cusAddress
+        + "\n" + "Privilege: " + cusPrivilege
+        + "\n" + "Discount: " + cusDiscount
+        + "\n" + "Accompanying: " + cusAccompanying
+        + "\n" + "Number of days to rent: " + cusDaysToRent
+        + "\n" + "Type of service: " + cusTypeOfService
+        + "\n" + "Type of room: " + cusTypeOfRoom
+        + "\n" + "Room rates: " + result
+    );
+
+</script>
+</body>
+</html>

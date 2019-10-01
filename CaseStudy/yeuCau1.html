@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Furama Resort</title>
+</head>
+<body>
+<script>
+    //task 1
+    let cusName = prompt("Enter your name:");
+    let cusIdCard = prompt("Enter your ID Card:");
+    let cusBirthday = prompt("Enter your birthday (dd/MM/YYYY):");
+    let cusEmail = prompt("Enter your email:");
+    let cusAddress = prompt("Enter your address:");
+    let cusPrivilege = prompt("Enter your privilege:");
+    let cusDiscount = prompt("Enter your discount:");
+    let cusAccompanying = prompt("Enter your Accompanying:");
+    let cusDaysToRent = prompt("Enter the number of days to rent:");
+    let cusTypeOfService = prompt("Enter type of service you want: (Villa, House, Room");
+    let cusTypeOfRoom = prompt("Enter type of room you want: (VIP, Business, Normal");
+    let result = 500 * cusDaysToRent * (1 - cusDiscount / 100);
+    //task 2
+    alert("All your information:"
+        + "\n" + "Name: " + cusName
+        + "\n" + "ID Card: " + cusIdCard
+        + "\n" + "Birthday: " + cusBirthday
+        + "\n" + "Email: " + cusEmail
+        + "\n" + "Address: " + cusAddress
+        + "\n" + "Privilege: " + cusPrivilege
+        + "\n" + "Discount: " + cusDiscount
+        + "\n" + "Accompanying: " + cusAccompanying
+        + "\n" + "Number of days to rent: " + cusDaysToRent
+        + "\n" + "Type of service: " + cusTypeOfService
+        + "\n" + "Type of room: " + cusTypeOfRoom
+        + "\n" + "Room rates: " + result
+    );
+
+</script>
+</body>
+</html>
