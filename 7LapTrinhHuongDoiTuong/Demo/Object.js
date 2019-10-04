@@ -12,9 +12,9 @@ let rectangle = function () {
         return this.heightValue;
     };
     this.perimeter = function () {
-        return (this.widthValue + this.heightValue) * 2;
+        return (this.getWidth() + this.getHeight()) * 2;
     };
     this.area = function () {
-        return this.widthValue * this.heightValue;
+        return this.getWidth() * this.getHeight();
     };
 };

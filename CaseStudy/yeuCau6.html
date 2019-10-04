@@ -2,9 +2,281 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Welcome Furama Resort</title>
 </head>
 <body>
 
+<script>
+
+    function displayMainMenu(selectValue) {
+        selectValue = prompt(
+            "What would you like to do?" + "\n" +
+            "Please select an optional value." + "\n" +
+            "1: Add New Customer." + "\n" +
+            "2: Display Information Customer." + "\n" +
+            "3: Edit Information." + "\n" +
+            "4: Delete Customer." + "\n" +
+            "5: Exit."
+        );
+        return selectValue;
+    }
+
+    let cusName = [];
+    let cusIdCard = [];
+    let cusBirthday = [];
+    let cusEmail = [];
+    let cusAddress = [];
+    let cusPrivilege = [];
+    let cusDiscount = [];
+    let cusAccompanying = [];
+    let cusDaysToRent = [];
+    let cusTypeOfService = [];
+    let cusTypeOfRoom = [];
+    let arrListCustomer = [];
+    let arrBasicInfo = [];
+
+    function addNewCustomer() {
+        let countCus;
+        countCus = parseFloat(prompt("How many new customers do you want to add?"));
+        for (let i = 0; i < countCus; i++) {
+            cusName.push(prompt("Enter customer name:"));
+            cusIdCard.push(prompt("Enter customer ID Card:"));
+            cusBirthday.push(prompt("Enter customer birthday (dd/MM/YYYY):"));
+            cusEmail.push(prompt("Enter customer email:"));
+            cusAddress.push(prompt("Enter customer address:"));
+            cusPrivilege.push(prompt("Enter customer privilege:"));
+            cusDiscount.push(prompt("Enter customer discount:"));
+            cusAccompanying.push(prompt("Enter customer Accompanying:"));
+            cusDaysToRent.push(prompt("Enter the number of days to rent:"));
+            cusTypeOfService.push(prompt("Enter type of service you want: (Villa, House, Room"));
+            cusTypeOfRoom.push(prompt("Enter type of room you want: (VIP, Business, Normal"));
+            arrListCustomer.push("All customer information:" + "\n" +
+                "Name: " + cusName[i] + "\n" +
+                "ID Card: " + cusIdCard[i] + "\n" +
+                "Birthday: " + cusBirthday[i] + "\n" +
+                "Email: " + cusEmail[i] + "\n" +
+                "Address: " + cusAddress[i] + "\n" +
+                "Privilege: " + cusPrivilege[i] + "\n" +
+                "Discount: " + cusDiscount[i] + "\n" +
+                "Accompanying: " + cusAccompanying[i] + "\n" +
+                "Number of days to rent: " + cusDaysToRent[i] + "\n" +
+                "Type of service: " + cusTypeOfService[i] + "\n" +
+                "Type of room: " + cusTypeOfRoom[i]
+            );
+            arrBasicInfo.push((i + 1) + "." + " Name: " + cusName[i] + " ID Card: " + cusIdCard[i]);
+            alert(arrListCustomer[i]);
+        }
+        alert("Information of all customers has been saved.")
+    }
+
+    function displayInformationCustomer() {
+        let basicInfo = "";
+        if (arrBasicInfo.length === 0) {
+            alert("No customer information has been saved.");
+        } else {
+            for (let i = 0; i < arrBasicInfo.length; i++) {
+                basicInfo = basicInfo + arrBasicInfo[i] + "\n";
+            }
+
+            let keyWord;
+            keyWord = prompt(basicInfo + "Type name or ID card to find customer information.");
+            for (let i = 0; i < arrListCustomer.length; i++) {
+                if (keyWord === cusName[i]) {
+                    alert(arrListCustomer[i]);
+                    break;
+                }else if(keyWord === cusIdCard[i]){
+                    alert(arrListCustomer[i]);
+                    break;
+                } else {
+                    alert("Keyword is wrong!!! Please try again!!!");
+                }
+            }
+        }
+
+    }
+
+    function editInformation() {
+        let keyWord;
+        keyWord = prompt("Type name or ID card to find customer information.");
+        for (let i = 0; i < arrListCustomer.length; i++) {
+            if (keyWord === cusName[i]) {
+                let numOfInfo;
+                numOfInfo = parseFloat(prompt("What information would you like to edit?"
+                    + "\n" + "Please select the number."
+                    + "\n" + "1: Name: " + cusName[i]
+                    + "\n" + "2: ID Card: " + cusIdCard[i]
+                    + "\n" + "3: Birthday: " + cusBirthday[i]
+                    + "\n" + "4: Email: " + cusEmail[i]
+                    + "\n" + "5: Address: " + cusAddress[i]
+                    + "\n" + "6: Privilege: " + cusPrivilege[i]
+                    + "\n" + "7: Discount: " + cusDiscount[i]
+                    + "\n" + "8: Accompanying: " + cusAccompanying[i]
+                    + "\n" + "9: Number of days to rent: " + cusDaysToRent[i]
+                    + "\n" + "10: Type of service: " + cusTypeOfService[i]
+                    + "\n" + "11: Type of room: " + cusTypeOfRoom[i]));
+                switch (numOfInfo) {
+                    case 1:
+                        cusName[i] = prompt("Enter the name to edit:");
+                        break;
+                    case 2:
+                        cusIdCard[i] = prompt("Enter the ID card to edit:");
+                        break;
+                    case 3:
+                        cusBirthday[i] = prompt("Enter the birthday to edit:");
+                        break;
+                    case 4:
+                        cusEmail[i] = prompt("Enter the email to edit:");
+                        break;
+                    case 5:
+                        cusAddress[i] = prompt("Enter the address to edit:");
+                        break;
+                    case 6:
+                        cusPrivilege[i] = prompt("Enter the privilege to edit:");
+                        break;
+                    case 7:
+                        cusDiscount[i] = prompt("Enter the number of discount to edit:");
+                        break;
+                    case 8:
+                        cusAccompanying[i] = prompt("Enter the number of accompanying to edit:");
+                        break;
+                    case 9:
+                        cusDaysToRent[i] = prompt("Enter the number of days to rent to edit:");
+                        break;
+                    case 10:
+                        cusTypeOfService[i] = prompt("Enter the type of service to edit:" + "\n" + "Villa, House or Room");
+                        break;
+                    case 11:
+                        cusTypeOfRoom[i] = prompt("Enter the type of room to edit:");
+                        break;
+                }
+                alert("All your information:"
+                    + "\n" + "Name: " + cusName[i]
+                    + "\n" + "ID Card: " + cusIdCard[i]
+                    + "\n" + "Birthday: " + cusBirthday[i]
+                    + "\n" + "Email: " + cusEmail[i]
+                    + "\n" + "Address: " + cusAddress[i]
+                    + "\n" + "Privilege: " + cusPrivilege[i]
+                    + "\n" + "Discount: " + cusDiscount[i]
+                    + "\n" + "Accompanying: " + cusAccompanying[i]
+                    + "\n" + "Number of days to rent: " + cusDaysToRent[i]
+                    + "\n" + "Type of service: " + cusTypeOfService[i]
+                    + "\n" + "Type of room: " + cusTypeOfRoom[i]
+                );
+            }
+            if (keyWord === cusIdCard[i]) {
+                let numOfInfo;
+                numOfInfo = parseFloat(prompt("What information would you like to edit?"
+                    + "\n" + "Please select the number."
+                    + "\n" + "1: Name: " + cusName[i]
+                    + "\n" + "2: ID Card: " + cusIdCard[i]
+                    + "\n" + "3: Birthday: " + cusBirthday[i]
+                    + "\n" + "4: Email: " + cusEmail[i]
+                    + "\n" + "5: Address: " + cusAddress[i]
+                    + "\n" + "6: Privilege: " + cusPrivilege[i]
+                    + "\n" + "7: Discount: " + cusDiscount[i]
+                    + "\n" + "8: Accompanying: " + cusAccompanying[i]
+                    + "\n" + "9: Number of days to rent: " + cusDaysToRent[i]
+                    + "\n" + "10: Type of service: " + cusTypeOfService[i]
+                    + "\n" + "11: Type of room: " + cusTypeOfRoom[i]));
+                switch (numOfInfo) {
+                    case 1:
+                        cusName[i] = prompt("Enter the name to edit:");
+                        break;
+                    case 2:
+                        cusIdCard[i] = prompt("Enter the ID card to edit:");
+                        break;
+                    case 3:
+                        cusBirthday[i] = prompt("Enter the birthday to edit:");
+                        break;
+                    case 4:
+                        cusEmail[i] = prompt("Enter the email to edit:");
+                        break;
+                    case 5:
+                        cusAddress[i] = prompt("Enter the address to edit:");
+                        break;
+                    case 6:
+                        cusPrivilege[i] = prompt("Enter the privilege to edit:");
+                        break;
+                    case 7:
+                        cusDiscount[i] = prompt("Enter the number of discount to edit:");
+                        break;
+                    case 8:
+                        cusAccompanying[i] = prompt("Enter the number of accompanying to edit:");
+                        break;
+                    case 9:
+                        cusDaysToRent[i] = prompt("Enter the number of days to rent to edit:");
+                        break;
+                    case 10:
+                        cusTypeOfService[i] = prompt("Enter the type of service to edit:" + "\n" + "Villa, House or Room");
+                        break;
+                    case 11:
+                        cusTypeOfRoom[i] = prompt("Enter the type of room to edit:");
+                        break;
+                }
+                alert("All your information:"
+                    + "\n" + "Name: " + cusName[i]
+                    + "\n" + "ID Card: " + cusIdCard[i]
+                    + "\n" + "Birthday: " + cusBirthday[i]
+                    + "\n" + "Email: " + cusEmail[i]
+                    + "\n" + "Address: " + cusAddress[i]
+                    + "\n" + "Privilege: " + cusPrivilege[i]
+                    + "\n" + "Discount: " + cusDiscount[i]
+                    + "\n" + "Accompanying: " + cusAccompanying[i]
+                    + "\n" + "Number of days to rent: " + cusDaysToRent[i]
+                    + "\n" + "Type of service: " + cusTypeOfService[i]
+                    + "\n" + "Type of room: " + cusTypeOfRoom[i]
+                );
+            }
+        }
+
+    }
+
+    function deleteCustomer() {
+        let keyWord;
+        keyWord = prompt("Type name or ID card to find customer information.");
+        for (let i = 0; i < arrListCustomer.length; i++) {
+            if (keyWord === cusName[i]) {
+                arrListCustomer.splice(i, 1);
+                break;
+            }
+            if (keyWord === cusIdCard[i]) {
+                arrListCustomer.splice(i, 1);
+                break;
+            }
+        }
+    }
+
+    function exit() {
+        alert("Thank you for booking here.");
+        return loop = false;
+    }
+
+    let loop = true;
+    do {
+        let selectValue = parseFloat(displayMainMenu());
+        switch (selectValue) {
+            case 1:
+                addNewCustomer();
+                break;
+            case 2:
+                displayInformationCustomer();
+                break;
+            case 3:
+                editInformation();
+                break;
+            case 4:
+                deleteCustomer();
+                break;
+            case 5:
+                exit();
+                break;
+            default:
+                alert("Please type the number do you want to do!!!");
+                break;
+        }
+    }
+    while (loop);
+
+</script>
 </body>
 </html>
