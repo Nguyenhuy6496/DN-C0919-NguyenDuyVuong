@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let loop = true;
+    let email;
+    regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    do{
+        email = prompt("Type the email here:");
+        if(regexp.test(email)){
+            loop = false;
+        }else {
+            alert("Wrong!!!");
+        }
+    }
+    while (loop);
+
+</script>
+</body>
+</html>
