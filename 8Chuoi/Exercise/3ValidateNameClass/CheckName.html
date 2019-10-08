@@ -7,11 +7,11 @@
 <body>
 <script>
     let loop = true;
-    let email;
-    regexp = /^(([a-zA-Z\d]{1,20})|([a-zA-Z]{1,10}[_-]{1}[a-zA-Z]{1,10}))+@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    let classNum;
+    regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
     do{
-        email = prompt("Type the email here:");
-        if(regexp.test(email)){
+        classNum = prompt("Type the name class here:");
+        if(regexp.test(classNum)){
             loop = false;
         }else {
             alert("Wrong!!!");

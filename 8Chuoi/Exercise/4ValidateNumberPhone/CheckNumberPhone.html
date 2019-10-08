@@ -7,11 +7,11 @@
 <body>
 <script>
     let loop = true;
-    let email;
-    regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    let number;
+    regexp = /^[0-9]{2}[-][0][0-9]{9}$/;
     do{
-        email = prompt("Type the email here:");
-        if(regexp.test(email)){
+        number = prompt("Type the number phone here: (xx)-(0xxxxxxxxx)");
+        if(regexp.test(number)){
             loop = false;
         }else {
             alert("Wrong!!!");

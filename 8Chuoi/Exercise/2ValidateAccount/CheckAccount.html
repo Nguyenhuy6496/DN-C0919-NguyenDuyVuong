@@ -7,11 +7,11 @@
 <body>
 <script>
     let loop = true;
-    let email;
-    regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    let account;
+    regexp = /^[_a-z0-9]{6,}$/;
     do{
-        email = prompt("Type the email here:");
-        if(regexp.test(email)){
+        account = prompt("Type the account here:");
+        if(regexp.test(account)){
             loop = false;
         }else {
             alert("Wrong!!!");
